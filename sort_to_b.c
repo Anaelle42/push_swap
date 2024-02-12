@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:46:55 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/11 00:12:15 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/12 18:41:08 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,13 +46,13 @@ t_list	**push_sort_b(t_list **stack_a, t_list **stack_b)
 		while (i >= 0)
 		{
 			if (i == cmb_rarb(*stack_a, *stack_b, tmp->content, 'b'))
-				i = fais_rarb(stack_a, stack_b, tmp->content, 'a');
+				i = fais_rarb(stack_a, stack_b, tmp->content, 'b');
 			else if (i == cmb_rrarrb(*stack_a, *stack_b, tmp->content, 'b'))
-				i = fais_rrarrb(stack_a, stack_b, tmp->content, 'a');
+				i = fais_rrarrb(stack_a, stack_b, tmp->content, 'b');
 			else if (i == cmb_rarrb(*stack_a, *stack_b, tmp->content, 'b'))
-				i = fais_rarrb(stack_a, stack_b, tmp->content, 'a');
+				i = fais_rarrb(stack_a, stack_b, tmp->content, 'b');
 			else if (i == cmb_rrarb(*stack_a, *stack_b, tmp->content, 'b'))
-				i = fais_rrarb(stack_a, stack_b, tmp->content, 'a');
+				i = fais_rrarb(stack_a, stack_b, tmp->content, 'b');
 			tmp = tmp->next;
 		}
 	}

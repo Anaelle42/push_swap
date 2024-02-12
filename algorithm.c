@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 18:39:46 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/11 00:25:26 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/12 19:12:56 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,8 +107,7 @@ void	algo_2(t_list **stack_a, t_list **stack_b)
 			{
 				stack_b = push_sort_b(stack_a, stack_b);
 			}
-			if (check_sort(*stack_a) == 0)
-				sort_3n(stack_a);
+			sort_3n(stack_a);
 			stack_a = push_sort_a(stack_a, stack_b);
 			size = nbr_min(*stack_a);
 			while ((*stack_a)->content != size)
@@ -119,6 +118,8 @@ void	algo_2(t_list **stack_a, t_list **stack_b)
 					rotate_a(stack_a);
 			}
 		}
-		printf("pile ok en 600-1 \n");
+		printf("pile ok en 639 ??\n");
+		if (check_sort(*stack_a) == 1)
+			printf("c'est trié piouu\n");
 	}
 }

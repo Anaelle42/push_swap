@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 22:52:15 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/11 00:12:40 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/12 18:42:50 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	fais_rrarrb(t_list **a, t_list **b, int n, int who)
 {
-	if (who == 'a')
+	if (who == 'b')
 	{
 		while (((*a)->content != n) && (position_voulue_dans_b(*b, n) != 0))
 			rr_all(a, b);
@@ -39,7 +39,7 @@ int	fais_rrarrb(t_list **a, t_list **b, int n, int who)
 
 int	fais_rarb(t_list **a, t_list **b, int n, int who)
 {
-	if (who == 'a')
+	if (who == 'b')
 	{
 		while (((*a)->content != n) && (position_voulue_dans_b(*b, n) != 0))
 			rotate_all(a, b);
@@ -64,7 +64,7 @@ int	fais_rarb(t_list **a, t_list **b, int n, int who)
 
 int	fais_rarrb(t_list **a, t_list **b, int n, int who)
 {
-	if (who == 'a')
+	if (who == 'b')
 	{
 		while ((*a)->content != n)
 			rotate_a(a);
@@ -85,7 +85,7 @@ int	fais_rarrb(t_list **a, t_list **b, int n, int who)
 
 int	fais_rrarb(t_list **a, t_list **b, int n, int who)
 {
-	if (who == 'a')
+	if (who == 'b')
 	{
 		while ((*a)->content != n)
 			rr_a(a);

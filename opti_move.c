@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/28 20:01:39 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/11 00:13:55 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/12 19:10:30 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ int	cmb_rrarrb(t_list *a, t_list *b, int nb, int who)
 	}
 	else
 	{
-		if (i < (ft_lstsize(a) - position_voulue_dans_a(b, nb)))
-			i = ft_lstsize(a) - position_voulue_dans_a(b, nb);
+		if (i < (ft_lstsize(b) - position_voulue_dans_a(b, nb)))
+			i = ft_lstsize(b) - position_voulue_dans_a(b, nb);
 	}
 	return (i);
 }
