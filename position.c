@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 22:41:59 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 20:21:05 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/22 20:22:56 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,6 @@ int	find_position_in_b(t_list *a, int nb)
 	return (i);
 }
 
-// find_position_in_a
 int	find_position_in_a(t_list *a, int nb)
 {
 	t_list	*tmp;
