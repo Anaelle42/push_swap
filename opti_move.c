@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   opti_move.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ubuntu <ubuntu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/28 20:01:39 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/12 19:10:30 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/20 15:10:02 by ubuntu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
+// who == list
+// count_moves
 int	cmb_rarb(t_list *a, t_list *b, int nb, int who)
 {
 	int	i;

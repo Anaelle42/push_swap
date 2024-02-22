@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   position.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ubuntu <ubuntu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 22:41:59 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/11 00:22:40 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/20 15:07:19 by ubuntu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ int	position(t_list *a, int nb)
 	return (i);
 }
 
+//find_position_in_b
 int	position_voulue_dans_b(t_list *a, int nb)
 {
 	t_list	*tmp;
@@ -77,6 +78,7 @@ int	position_voulue_dans_b(t_list *a, int nb)
 	return (i);
 }
 
+//find_position_in_a
 int	position_voulue_dans_a(t_list *a, int nb)
 {
 	t_list	*tmp;

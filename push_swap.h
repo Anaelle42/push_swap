@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ubuntu <ubuntu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 17:31:51 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/11 00:09:39 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/20 15:06:47 by ubuntu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,15 +49,14 @@ int					parse_parameters(int argc, char **argv, t_list **stack_a);
 
 // algo
 void				algo(t_list **a, t_list **b);
-void				algo_2(t_list **stack_a, t_list **stack_b);
 int					nbr_min(t_list *a);
 int					nbr_max(t_list *a);
 int					position(t_list *a, int nb);
 int					position_voulue_dans_b(t_list *a, int nb);
 int					position_voulue_dans_a(t_list *a, int nb);
 
-t_list				**push_sort_b(t_list **stack_a, t_list **stack_b);
-t_list				**push_sort_a(t_list **stack_a, t_list **stack_b);
+void				push_sort_b(t_list **stack_a, t_list **stack_b);
+void				push_sort_a(t_list **stack_a, t_list **stack_b);
 
 // nb de coups
 int					cmb_rarb(t_list *a, t_list *b, int nb, int who);

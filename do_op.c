@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   do_op.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ubuntu <ubuntu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 22:52:15 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/12 18:42:50 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/20 15:08:29 by ubuntu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
+// do or execute
 int	fais_rrarrb(t_list **a, t_list **b, int n, int who)
 {
 	if (who == 'b')

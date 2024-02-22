@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_to_a.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ubuntu <ubuntu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 19:14:10 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/12 19:09:46 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/20 14:18:37 by ubuntu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	sort_to_a(t_list **stack_a, t_list **stack_b)
 	return (i);
 }
 
-t_list	**push_sort_a(t_list **stack_a, t_list **stack_b)
+void push_sort_a(t_list **stack_a, t_list **stack_b)
 {
 	t_list *tmp;
 	int i;
@@ -56,5 +56,4 @@ t_list	**push_sort_a(t_list **stack_a, t_list **stack_b)
 			tmp = tmp->next;
 		}
 	}
-	return (stack_a);
 }
