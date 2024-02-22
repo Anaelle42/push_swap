@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   algorithm.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ubuntu <ubuntu@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 18:39:46 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/20 14:56:12 by ubuntu           ###   ########.fr       */
+/*   Updated: 2024/02/22 19:34:28 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ void	algo(t_list **stack_a, t_list **stack_b)
 			}
 		}
 	}
-	printf("pile ok en 659 oui\n");
+	// printf("pile ok en 659 oui\n");
 	// if (check_sort(*a) == 1)
 	//	printf("c'est trié piouu\n");
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ubuntu <ubuntu@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 16:48:12 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/20 14:47:39 by ubuntu           ###   ########.fr       */
+/*   Updated: 2024/02/22 19:45:35 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,11 @@ int	main(int argc, char **argv)
 		ft_lstclear(&stack_a);
 		return (0);
 	}
-	algo(&stack_a, &stack_b);
-	ft_lstclear(&stack_a);
+	if (argc > 2)
+	{
+		algo(&stack_a, &stack_b);
+		ft_lstclear(&stack_a);
+	}
 	return (0);
 }
 
