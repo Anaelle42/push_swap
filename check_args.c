@@ -6,15 +6,11 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 17:48:44 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 19:10:40 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/22 20:15:37 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-// OK que des chiffres + et -
-// OK pas de doublons
-// Ok pas d'overflow
 
 int	check_numbers(char **argv)
 {

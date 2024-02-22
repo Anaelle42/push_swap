@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 18:03:49 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/08 19:11:07 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/22 20:15:31 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,6 @@ void	rotate(t_list **a)
 	*a = (*a)->next;
 	tmp->next->next = NULL;
 }
-
-// void	rotate(t_list **a)
-// {
-// 	t_list	*tmp;
-
-// 	if (!a)
-// 		return ;
-// 	tmp = *a;
-// 	*a = ft_lstlast(*a);
-// 	(*a)->next = tmp;
-// 	*a = tmp->next;
-// 	tmp->next = NULL;
-// }
 
 void	rotate_a(t_list **a)
 {
