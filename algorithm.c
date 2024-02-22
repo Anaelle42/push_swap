@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 18:39:46 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 20:21:38 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/22 20:32:51 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,4 @@ void	algo(t_list **stack_a, t_list **stack_b)
 			}
 		}
 	}
-	printf("pile ok en  oui\n");
 }

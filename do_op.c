@@ -6,16 +6,15 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 22:52:15 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 20:21:15 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/22 20:33:05 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-// do or execute
-int	fais_rrarrb(t_list **a, t_list **b, int n, int who)
+int	do_rrarrb(t_list **a, t_list **b, int n, int stack)
 {
-	if (who == 'b')
+	if (stack == 'b')
 	{
 		while (((*a)->content != n) && (find_position_in_b(*b, n) != 0))
 			rr_all(a, b);
@@ -38,9 +37,9 @@ int	fais_rrarrb(t_list **a, t_list **b, int n, int who)
 	return (-4);
 }
 
-int	fais_rarb(t_list **a, t_list **b, int n, int who)
+int	do_rarb(t_list **a, t_list **b, int n, int stack)
 {
-	if (who == 'b')
+	if (stack == 'b')
 	{
 		while (((*a)->content != n) && (find_position_in_b(*b, n) != 0))
 			rotate_all(a, b);
@@ -63,9 +62,9 @@ int	fais_rarb(t_list **a, t_list **b, int n, int who)
 	return (-5);
 }
 
-int	fais_rarrb(t_list **a, t_list **b, int n, int who)
+int	do_rarrb(t_list **a, t_list **b, int n, int stack)
 {
-	if (who == 'b')
+	if (stack == 'b')
 	{
 		while ((*a)->content != n)
 			rotate_a(a);
@@ -84,9 +83,9 @@ int	fais_rarrb(t_list **a, t_list **b, int n, int who)
 	return (-1);
 }
 
-int	fais_rrarb(t_list **a, t_list **b, int n, int who)
+int	do_rrarb(t_list **a, t_list **b, int n, int stack)
 {
-	if (who == 'b')
+	if (stack == 'b')
 	{
 		while ((*a)->content != n)
 			rr_a(a);

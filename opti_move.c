@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/28 20:01:39 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 20:26:22 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/22 20:29:01 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ int	count_moves_rrarrb(t_list *a, t_list *b, int nb, int stack)
 	return (i);
 }
 
-// count_moves_rrarb
 int	count_moves_rrarb(t_list *a, t_list *b, int nb, int stack)
 {
 	int	i;
@@ -65,7 +64,7 @@ int	count_moves_rrarb(t_list *a, t_list *b, int nb, int stack)
 	return (i);
 }
 
-int	cmb_rarrb(t_list *a, t_list *b, int nb, int stack)
+int	count_moves_rarrb(t_list *a, t_list *b, int nb, int stack)
 {
 	int	i;
 
