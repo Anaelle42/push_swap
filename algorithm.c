@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 18:39:46 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 19:34:28 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/22 20:21:38 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,9 +66,9 @@ void	algo(t_list **stack_a, t_list **stack_b)
 			if (ft_lstsize(*stack_a) > 3 && check_sort(*stack_a) == 1)
 				push_to_b(stack_a, stack_b);
 			if (ft_lstsize(*stack_a) > 3 && check_sort(*stack_a) == 1)
-				push_sort_b(stack_a, stack_b);
+				push_b(stack_a, stack_b);
 			sort_3n(stack_a);
-			push_sort_a(stack_a, stack_b);
+			push_a(stack_a, stack_b);
 			size = nbr_min(*stack_a);
 			while ((*stack_a)->content != size)
 			{
@@ -79,7 +79,5 @@ void	algo(t_list **stack_a, t_list **stack_b)
 			}
 		}
 	}
-	// printf("pile ok en 659 oui\n");
-	// if (check_sort(*a) == 1)
-	//	printf("c'est trié piouu\n");
+	printf("pile ok en  oui\n");
 }

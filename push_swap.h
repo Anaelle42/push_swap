@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 17:31:51 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 19:08:34 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/22 20:21:28 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,11 +52,11 @@ void				algo(t_list **a, t_list **b);
 int					nbr_min(t_list *a);
 int					nbr_max(t_list *a);
 int					position(t_list *a, int nb);
-int					position_voulue_dans_b(t_list *a, int nb);
-int					position_voulue_dans_a(t_list *a, int nb);
+int					find_position_in_b(t_list *a, int nb);
+int					find_position_in_a(t_list *a, int nb);
 
-void				push_sort_b(t_list **stack_a, t_list **stack_b);
-void				push_sort_a(t_list **stack_a, t_list **stack_b);
+void				push_b(t_list **stack_a, t_list **stack_b);
+void				push_a(t_list **stack_a, t_list **stack_b);
 
 // nb de coups
 int					cmb_rarb(t_list *a, t_list *b, int nb, int who);

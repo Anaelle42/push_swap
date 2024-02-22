@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 19:14:10 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 19:34:22 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/22 20:19:37 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	sort_to_a(t_list **stack_a, t_list **stack_b)
 	return (i);
 }
 
-void	push_sort_a(t_list **stack_a, t_list **stack_b)
+void	push_a(t_list **stack_a, t_list **stack_b)
 {
 	t_list	*tmp;
 	int		i;
