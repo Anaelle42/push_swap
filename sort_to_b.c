@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:46:55 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 20:32:08 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/23 18:07:31 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,11 +47,14 @@ void	push_b(t_list **stack_a, t_list **stack_b)
 		{
 			if (i == count_moves_rarb(*stack_a, *stack_b, tmp->content, 'b'))
 				i = do_rarb(stack_a, stack_b, tmp->content, 'b');
-			else if (i == count_moves_rrarrb(*stack_a, *stack_b, tmp->content, 'b'))
+			else if (i == count_moves_rrarrb(*stack_a, *stack_b, tmp->content,
+					'b'))
 				i = do_rrarrb(stack_a, stack_b, tmp->content, 'b');
-			else if (i == count_moves_rarrb(*stack_a, *stack_b, tmp->content, 'b'))
+			else if (i == count_moves_rarrb(*stack_a, *stack_b, tmp->content,
+					'b'))
 				i = do_rarrb(stack_a, stack_b, tmp->content, 'b');
-			else if (i == count_moves_rrarb(*stack_a, *stack_b, tmp->content, 'b'))
+			else if (i == count_moves_rrarb(*stack_a, *stack_b, tmp->content,
+					'b'))
 				i = do_rrarb(stack_a, stack_b, tmp->content, 'b');
 			tmp = tmp->next;
 		}

@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/28 20:01:39 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/23 18:28:45 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/23 18:27:17 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,20 +55,40 @@ int	count_moves_rrarrb(t_list *a, t_list *b, int nb, int stack)
 	return (i);
 }
 
+// int	count_moves_rrarb(t_list *a, t_list *b, int nb, int stack)
+// {
+// 	int	i;
+
+// 	i = 0;
+// 	if (position(a, nb) != 0)
+// 		i = (ft_lstsize(a) - position(a, nb));
+// 	if (stack == 'b')
+// 	{
+// 		i = i + find_position_in_b(b, nb);
+// 	}
+// 	else
+// 	{
+// 		i = i + find_position_in_a(b, nb);
+// 	}
+// 	return (i);
+// }
+
 int	count_moves_rrarb(t_list *a, t_list *b, int nb, int stack)
 {
 	int	i;
 
 	i = 0;
-	if (position(a, nb) != 0)
-		i = (ft_lstsize(a) - position(a, nb));
 	if (stack == 'b')
 	{
+		if (position(a, nb))
+			i = ft_lstsize(a) - position(a, nb);
 		i = i + find_position_in_b(b, nb);
 	}
 	else
 	{
-		i = i + find_position_in_a(b, nb);
+		if (find_position_in_a(a, nb))
+			i = ft_lstsize(a) - find_position_in_a(a, nb);
+		i = i + position(b, nb);
 	}
 	return (i);
 }
