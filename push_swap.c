@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 16:48:12 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 19:45:35 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/02/23 14:53:58 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,19 +31,6 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
-
-// printf("pile a :\n");
-// while (stack_a)
-// {
-// 	printf("%i ", (int)(size_t)stack_a->content);
-// 	stack_a = stack_a->next;
-// }
-// printf("\n\npile b :\n");
-// while (stack_b)
-// {
-// 	printf("%i ", (int)(size_t)stack_b->content);
-// 	stack_b = stack_b->next;
-// }
 
 void	ft_lstclear(t_list **lst)
 {
