@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 17:48:44 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 20:15:37 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/06/27 17:26:14 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,12 @@ void	create_stack(char **argv, t_list **stack_a)
 			exit(1);
 		}
 		new = ft_lstnew(value);
+		if (!new)
+		{
+			write(2, "Error\n", 6);
+			ft_lstclear(stack_a);
+			exit(1);
+		}
 		ft_lstadd_back(stack_a, new);
 		i++;
 	}
