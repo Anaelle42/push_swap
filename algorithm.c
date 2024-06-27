@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 18:39:46 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 20:32:51 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/06/27 18:03:42 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,18 @@ void	sort_3n(t_list **a)
 		}
 	}
 }
+
+void	sort_end(t_list **stack_a, int min)
+{
+	while ((*stack_a)->content != min)
+	{
+		if (position(*stack_a, min) > (ft_lstsize(*stack_a) / 2))
+			rr_a(stack_a);
+		else
+			rotate_a(stack_a);
+	}
+}
+
 void	algo(t_list **stack_a, t_list **stack_b)
 {
 	int	size;
@@ -69,14 +81,7 @@ void	algo(t_list **stack_a, t_list **stack_b)
 				push_b(stack_a, stack_b);
 			sort_3n(stack_a);
 			push_a(stack_a, stack_b);
-			size = nbr_min(*stack_a);
-			while ((*stack_a)->content != size)
-			{
-				if (position(*stack_a, size) > (ft_lstsize(*stack_a) / 2))
-					rr_a(stack_a);
-				else
-					rotate_a(stack_a);
-			}
+			sort_end(stack_a, nbr_min(*stack_a));
 		}
 	}
 }

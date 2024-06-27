@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 19:14:10 by ahenault          #+#    #+#             */
-/*   Updated: 2024/03/06 19:01:17 by ahenault         ###   ########.fr       */
+/*   Updated: 2024/06/27 18:04:09 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ int	sort_to_a(t_list **stack_a, t_list **stack_b)
 
 void	push_a(t_list **stack_a, t_list **stack_b)
 {
-	t_list *tmp;
-	int i;
+	t_list	*tmp;
+	int		i;
 
 	while (*stack_b)
 	{
