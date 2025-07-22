@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 22:41:59 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/22 20:22:56 by ahenault         ###   ########.fr       */
+/*   Updated: 2025/07/22 21:49:32 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@ int	nbr_min(t_list *a)
 {
 	int	min;
 
+	if (!a)
+	{
+		write(2, "Error\n", 6);
+		return (0);
+	}
 	min = a->content;
 	while (a)
 	{
@@ -30,6 +35,11 @@ int	nbr_max(t_list *a)
 {
 	int	max;
 
+	if (!a)
+	{
+		write(2, "Error\n", 6);
+		return (0);
+	}
 	max = a->content;
 	while (a)
 	{

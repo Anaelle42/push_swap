@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 17:48:44 by ahenault          #+#    #+#             */
-/*   Updated: 2024/06/27 17:26:14 by ahenault         ###   ########.fr       */
+/*   Updated: 2025/07/22 21:34:56 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	check_numbers(char **argv)
 	int	i;
 	int	j;
 
-	j = 0;
 	i = 1;
 	while (argv[i])
 	{

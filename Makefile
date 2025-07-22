@@ -1,6 +1,6 @@
-NAME = push_swap
+NAME	=push_swap
 
-HEADER = push_swap.h
+HEADER	=	push_swap.h
 
 SRCS	=	operations_1.c \
 			operations_2.c \
@@ -35,7 +35,6 @@ clean	:
 fclean	:	clean
 	$(RM) $(NAME) 			
 
-re	:	fclean 
-		make
+re	:	fclean all
 
 .PHONY	:	all clean fclean re 

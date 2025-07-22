@@ -6,7 +6,7 @@
 /*   By: ahenault <ahenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 18:03:22 by ahenault          #+#    #+#             */
-/*   Updated: 2024/02/08 15:20:30 by ahenault         ###   ########.fr       */
+/*   Updated: 2025/07/22 21:54:47 by ahenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	reverse_rotate(t_list **lst)
 	t_list	*tmp;
 	t_list	*last;
 
-	if (!lst)
+	if (!*lst || !(*lst)->next)
 		return ;
 	tmp = *lst;
 	while (tmp->next)
